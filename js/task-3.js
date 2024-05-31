@@ -1,3 +1,15 @@
+function filterArray(numbers, value) {
+  let newNumberArray = [];
+
+  for (let i = 0; i < numbers.length; i++) {
+    if (numbers[i] > value) {
+      newNumberArray.push(numbers[i]);
+    }
+  }
+
+  return newNumberArray;
+}
+
 console.log(filterArray([1, 2, 3, 4, 5], 3)); // [4, 5]
 console.log(filterArray([1, 2, 3, 4, 5], 4)); // [5]
 console.log(filterArray([1, 2, 3, 4, 5], 5)); // []
